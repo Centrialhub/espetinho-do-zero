@@ -1,40 +1,31 @@
 # Espetinho do Zero
 
-Página de vendas exclusiva da oferta **Espetinho do Zero — Receitas, Produção e Preço Certo**.
-
-## Executar
-
-Site estático, sem dependências ou etapa de build. Abra `index.html` no navegador ou execute `python3 -m http.server 8080` nesta pasta.
-
-Para hospedagem estática, publique a raiz deste repositório.
+Página principal reconstruída com a skill PaginaPro V1 fornecida pelo usuário. Oferta: R$37.
 
 ## Estrutura
 
-- `index.html`: página principal com a oferta de R$37, calculadora demonstrativa e FAQ.
-- `upsell.html`: oferta opcional Operação Espetinho, de R$67.
-- `styles.css`: estilos e regras de layout responsivo.
-- `app.js`: calculadora, aviso de prévia e redirecionamento ao checkout principal com UTMs.
-- `config.js`: configuração dos links da Cakto e identificação do vendedor.
-- `politicas.html`: informações da compra e texto-base de privacidade a completar.
-- `assets/`: fotografia ilustrativa gerada por IA e marca tipográfica do produto.
+- Raiz: build estática pronta para hospedagem, com index.html, assets/ e fonts/.
+- pagina-de-vendas/: projeto React + Vite, copy, estratégia, manifesto visual e auditoria.
+- config.js: links de checkout e dados comerciais, carregados em tempo de execução.
+- upsell.html: complemento opcional Operação Espetinho, R$67.
+- politicas.html: condições da compra a completar antes da ativação comercial.
 
-## Antes de ativar vendas
+## Desenvolvimento
 
-1. Preencha `checkoutUrl`, `upsellCheckoutUrl`, `vendedor`, `documento` e `suporte` em `config.js`.
-2. Complete `politicas.html` com as condições reais de entrega, suporte, acesso e reembolso.
-3. Configure na Cakto o produto principal, o order bump opcional de R$12,90 e o upsell opcional de R$67.
-4. Confira as dimensões dos banners nos campos atuais da plataforma e teste compra e entrega por oferta.
-5. Faça um lote piloto das receitas e ajuste os rendimentos estimados antes de alegar validação culinária.
-6. Confira o layout em celular e desktop na hospedagem escolhida.
+Instale as dependências dentro de pagina-de-vendas com pnpm install --frozen-lockfile. Na raiz, npm run dev abre o projeto. npm run build recompila e sincroniza a build na raiz. O build ignora assets/originais no espelhamento para hospedagem; as amostras originais ficam no projeto fonte.
 
-Enquanto o link do checkout principal estiver vazio, o botão exibe aviso de prévia. O upsell também não realiza compra sem link configurado. A página não foi publicada por este envio ao GitHub.
+## Configuração comercial
 
-## Materiais pagos
+Preencha checkoutUrl, upsellCheckoutUrl, vendedor, suporte e documento em config.js e também em pagina-de-vendas/public/config.js antes de recompilar. O botão de compra permanece desabilitado sem checkout HTTPS. O hero leva a #previas e os demais CTAs a #oferta; somente o botão da oferta acessa o checkout. UTMs são preservadas.
 
-PDFs, planilhas comerciais e pacotes de entrega ficam fora deste repositório público. Entregue-os pela área de membros ou pelo acesso controlado da plataforma de vendas. Nunca coloque esses arquivos na raiz pública do site.
+Não foi conectada a Cakto nem publicada uma página pública por este commit. Confirme garantia, prazo de acesso, suporte e condições legais antes de vender. Os complementos pagos não são bônus gratuitos.
 
-## Validação realizada
+## Conteúdo e imagens
 
-Sintaxe do JavaScript conferida. A calculadora foi testada no navegador com custos de R$4 e R$8, taxas de 5% e margem de 30%, e bloqueio quando taxas mais margem chegam a 100%. O botão sem checkout mostrou o aviso de prévia. Não houve compra real nem teste de viewport móvel.
+Páginas reais selecionadas do manual e captura real da planilha, compostas em CSS segundo as referências da skill. Não há alegação de uso de modelo de imagem específico. A fotografia da capa é ilustrativa. Receitas e rendimentos exigem lote piloto.
 
-Fotografia ilustrativa gerada por IA. Sem depoimentos fictícios, escassez artificial ou garantia de renda.
+PDFs integrais, planilhas pagas e pacotes de entrega não estão neste repositório público.
+
+## Validação
+
+Build concluída; hero, CTAs, galeria, pausa, FAQ e checkout não configurado conferidos. Larguras 320, 375, 430, 768 e 1440 verificadas sem overflow horizontal. Limites e pendências em pagina-de-vendas/07-auditoria-design.md. Lighthouse e compra real não executados.

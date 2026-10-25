@@ -1,0 +1,9 @@
+{
+  "name": "espetinho-do-zero",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix pagina-de-vendas run dev",
+    "build": "npm --prefix pagina-de-vendas run build && node scripts/sync-build.mjs"
+  }
+}

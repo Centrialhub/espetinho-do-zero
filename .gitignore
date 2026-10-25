@@ -5,3 +5,7 @@ Thumbs.db
 node_modules/
 __pycache__/
 *.log
+
+pagina-de-vendas/dist/
+.pnpm-store/
+.openai/

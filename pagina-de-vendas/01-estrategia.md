@@ -1,6 +1,6 @@
 # Espetinho do Zero: estratégia da reconstrução PaginaPro V1
 
-Status: diagnóstico e propostas de headline. Layout e copy final aguardam escolha explícita do usuário, conforme o portão da skill fornecida.
+Status: headline e subtítulo aprovados explicitamente. Copy, layout React, composições reais e build concluídos. Ver auditoria em 07-auditoria-design.md.
 
 ## Identidade e campos comerciais
 
