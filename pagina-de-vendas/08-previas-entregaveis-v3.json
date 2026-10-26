@@ -1,0 +1,128 @@
+[
+  {
+    "asset": "capa-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 1,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "receita-bovina-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 16,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "receita-frango-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 22,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "lista-compras-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 40,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "ficha-lote-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 43,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "custos-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 2,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "checklist-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 44,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "preparo-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 17,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "guia-planilha-v3.webp",
+    "source": "Manual_Espetinho_do_Zero.pdf",
+    "source_sha256": "3e27cab07f278f79f51e88acc59aef40698d59efaaf99811ac23f6a368cfb003",
+    "page": 15,
+    "size": [
+      720,
+      1480
+    ]
+  },
+  {
+    "asset": "planilha-painel-v3.webp",
+    "source": "Premium_V3/04_Previas/Painel_Precificacao.png",
+    "crop": "Remove only row/column header gutter from workbook render",
+    "size": [
+      1440,
+      1277
+    ]
+  },
+  {
+    "asset": "planilha-inicio-v3.webp",
+    "source": "Premium_V3/04_Previas/Central_Precificacao.png",
+    "crop": "Remove only row/column header gutter from workbook render",
+    "size": [
+      1440,
+      1085
+    ]
+  },
+  {
+    "asset": "operacao-painel-v3.webp",
+    "source": "Premium_V3/04_Previas/Painel_Operacao.png",
+    "crop": "Remove only row/column header gutter from workbook render",
+    "size": [
+      1440,
+      1226
+    ]
+  },
+  {
+    "asset": "operacao-capa-v3.webp",
+    "source": "Operacao_Espetinho.pdf",
+    "page": 1,
+    "size": [
+      720,
+      1480
+    ]
+  }
+]

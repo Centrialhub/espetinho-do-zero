@@ -42,32 +42,32 @@ export const content = {
   ],
   "gallerySection": {
     "title": "Veja o kit por dentro antes de comprar.",
-    "lead": "Páginas reais do material. Confira o preparo, a lista de compras e as fichas que acompanham sua produção.",
-    "caption": "Amostras do manual de 28 páginas. A planilha é um arquivo XLSX separado."
+    "lead": "Capturas do PDF final que você recebe. Confira receitas, listas de compras e fichas de produção.",
+    "caption": "Páginas da edição final de 45 páginas, com sumário clicável. Fotos culinárias ilustrativas. A planilha é um arquivo XLSX separado."
   },
   "gallery": [
     [
-      "/assets/receita-bovina.webp",
+      "/assets/receita-bovina-v3.webp",
       "Receita de bovino alho e sal"
     ],
     [
-      "/assets/receita-frango.webp",
+      "/assets/receita-frango-v3.webp",
       "Receita de frango alho e ervas"
     ],
     [
-      "/assets/lista-compras.webp",
+      "/assets/lista-compras-v3.webp",
       "Lista de compra para 30 espetinhos"
     ],
     [
-      "/assets/ficha-lote.webp",
+      "/assets/ficha-lote-v3.webp",
       "Ficha de registro do lote piloto"
     ],
     [
-      "/assets/custos.webp",
+      "/assets/custos-v3.webp",
       "Fundamentos do cálculo do preço"
     ],
     [
-      "/assets/checklist.webp",
+      "/assets/checklist-v3.webp",
       "Checklist de produção"
     ]
   ],
@@ -97,7 +97,7 @@ export const content = {
   "midPitch": {
     "title": "O espetinho vende. Mas quanto sobra depois da conta?",
     "text": "A planilha considera o que entra na produção, não apenas a carne. Troque os valores de exemplo pelos seus e compare preços antes de montar a oferta.",
-    "caption": "Prévia real da planilha. Valores demonstrativos, não cotações de mercado."
+    "caption": "Telas reais do arquivo XLSX entregue. Alterne entre o painel e a tela inicial. Os valores são exemplos."
   },
   "audienceSection": {
     "title": "Um ponto de partida para quem quer vender espetinhos.",
@@ -126,7 +126,7 @@ export const content = {
     ],
     [
       "Quer incluir um combo",
-      "Simule espetinho, acompanhamento, bebida e embalagem na mesma conta."
+      "Calcule o custo de cada item e inclua também a embalagem antes de definir seu combo."
     ]
   ],
   "benefitsSection": {
@@ -141,7 +141,7 @@ export const content = {
     "Considere perdas e despesas além do custo da carne.",
     "Compare preço sugerido e margem no preço praticado.",
     "Leia os PDFs no celular e imprima as fichas.",
-    "Simule compras, combos e resultado da produção no XLSX."
+    "Simule quantidades produzidas, vendas e resultado mensal no XLSX."
   ],
   "bonuses": [],
   "offer": {
@@ -154,13 +154,13 @@ export const content = {
     "Aprenda o preparo com 12 receitas de espetinhos.",
     "Planeje compras e registre o rendimento dos seus lotes.",
     "Calcule custos, taxas, preço e margem na planilha.",
-    "Simule combos e o resultado estimado da produção.",
+    "Simule o resultado mensal considerando produção, vendas e despesas.",
     "Consulte o manual e imprima as fichas de apoio."
   ],
   "faqs": [
     [
       "O que eu recebo por R$37?",
-      "O manual digital de 28 páginas com 12 receitas, fichas, listas de compra, checklist e guia de uso, além da planilha XLSX de precificação."
+      "O manual digital de 45 páginas com 12 receitas, fichas, listas de compra, checklist e guia de uso, além da planilha XLSX de precificação."
     ],
     [
       "Preciso saber fazer churrasco?",
@@ -184,7 +184,7 @@ export const content = {
     ],
     [
       "As receitas foram executadas em cozinha?",
-      "Ainda não nesta edição. Os rendimentos são estimados. Faça um lote piloto antes de ampliar a produção ou anunciar gramagens prontas."
+      "Ainda não nesta edição. As fotos culinárias são ilustrações geradas por IA; as páginas mostradas são capturas dos arquivos entregues. Confira sabor e rendimento em lote piloto antes de ampliar a produção."
     ],
     [
       "Como recebo e quais são as condições de reembolso?",

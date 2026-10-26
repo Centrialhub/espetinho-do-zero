@@ -9,15 +9,19 @@ function SectionTitle({children,lead}) {return <header className="section-title"
 function ProductComposition({variant='hero'}) {
  const compact=variant==='compact';const collection=variant==='collection';
  return <div className={`product-composition product-composition--${variant}`} role="group" aria-label="Capa e páginas reais do Espetinho do Zero">
-  <img className="product-sheet product-sheet--left" src="/assets/receita-bovina.webp" alt="Receita real de bovino alho e sal" width="720" height="1080" loading={compact||collection?'lazy':undefined}/>
-  <img className="product-sheet product-sheet--middle" src="/assets/ficha-lote.webp" alt="Ficha de registro da produção" width="720" height="1080" loading={compact||collection?'lazy':undefined}/>
-  <img className="product-sheet product-sheet--right" src="/assets/lista-compras.webp" alt="Lista de compra para um lote de 30 unidades" width="720" height="1080" loading={compact||collection?'lazy':undefined}/>
-  <img className="product-cover" src="/assets/capa.webp" alt="Capa oficial Espetinho do Zero" width="720" height="1080" loading={compact||collection?'lazy':undefined} fetchPriority={compact||collection?undefined:'high'}/>
-  {variant==='hero'&&<div className="phone-mockup"><img src="/assets/receita-frango.webp" alt="Página de receita consultada em dispositivo" width="720" height="1080"/></div>}
+  <img className="product-sheet product-sheet--left" src="/assets/receita-bovina-v3.webp" alt="Receita real de bovino alho e sal" width="720" height="1480" loading={compact||collection?'lazy':undefined}/>
+  <img className="product-sheet product-sheet--middle" src="/assets/ficha-lote-v3.webp" alt="Ficha de registro da produção" width="720" height="1480" loading={compact||collection?'lazy':undefined}/>
+  <img className="product-sheet product-sheet--right" src="/assets/lista-compras-v3.webp" alt="Lista de compra para um lote de 30 unidades" width="720" height="1480" loading={compact||collection?'lazy':undefined}/>
+  <img className="product-cover" src="/assets/capa-v3.webp" alt="Capa oficial Espetinho do Zero" width="720" height="1480" loading={compact||collection?'lazy':undefined} fetchPriority={compact||collection?undefined:'high'}/>
+  {variant==='hero'&&<div className="phone-mockup"><img src="/assets/receita-frango-v3.webp" alt="Página de receita consultada em dispositivo" width="720" height="1480"/></div>}
   {!compact&&<div className="quantity-seal"><strong>12</strong><span>RECEITAS</span></div>}
  </div>;
 }
-function SpreadsheetComposition(){return <div className="spreadsheet-composition" role="group" aria-label="Prévia real da planilha de precificação"><img className="support-sheet" src="/assets/ficha-lote.webp" alt="Ficha de lote que acompanha a planilha" loading="lazy" width="720" height="1080"/><div className="laptop"><div className="laptop-screen"><img src="/assets/planilha-real.webp" alt="Captura real da aba Preços com custos, taxas e resultado calculado" loading="lazy" width="1200" height="1421"/></div><div className="laptop-base"/></div></div>;}
+function SpreadsheetComposition(){
+ const [view,setView]=useState('painel');
+ const screens={painel:{src:'/assets/planilha-painel-v3.webp',alt:'Painel real do XLSX entregue: custo por unidade, preço sugerido, margem e simulação mensal'},inicio:{src:'/assets/planilha-inicio-v3.webp',alt:'Tela Início real do XLSX entregue, com os atalhos de navegação'}};
+ return <div className="spreadsheet-preview"><div className="preview-tabs" role="group" aria-label="Escolha uma tela real da planilha"><button type="button" aria-pressed={view==='painel'} onClick={()=>setView('painel')}>Painel de preços</button><button type="button" aria-pressed={view==='inicio'} onClick={()=>setView('inicio')}>Tela inicial</button></div><div className="spreadsheet-composition" role="group" aria-label="Captura real da planilha entregue"><img className="support-sheet" src="/assets/ficha-lote-v3.webp" alt="Ficha de registro do lote piloto incluída no manual" loading="lazy" width="720" height="1480"/><div className="laptop"><div className="laptop-screen"><img src={screens[view].src} alt={screens[view].alt} loading="lazy" width="1440" height="1240"/></div><div className="laptop-base"/></div></div><a className="preview-enlarge" href={screens[view].src} target="_blank" rel="noopener noreferrer">Ampliar esta tela ↗</a></div>;
+}
 function ScrollRail({ children, label, className = '', auto = false, interval = 2800 }) {
   const ref = useRef(null);
   const pausedRef = useRef(false);
@@ -131,12 +135,12 @@ export default function App(){const checkout=checkoutUrl();return <>
  </div></section>
  <section className="section section--tint gallery" id="previas"><div className="content content--1180 section-flow">
   <SectionTitle lead={content.gallerySection.lead}>{content.gallerySection.title}</SectionTitle>
-  <ScrollRail label="Páginas reais do kit" className="gallery-rail" auto interval={4200}>{content.gallery.map(([src,t])=><figure className="gallery-card" key={src}><img src={src} alt={t} loading="lazy" width="720" height="1080" draggable="false"/><figcaption>{t}</figcaption></figure>)}</ScrollRail>
+  <ScrollRail label="Páginas reais do kit" className="gallery-rail" auto interval={4200}>{content.gallery.map(([src,t])=><figure className="gallery-card" key={src}><img src={src} alt={t} loading="lazy" width="720" height="1480" draggable="false"/><figcaption>{t}</figcaption></figure>)}</ScrollRail>
   <p className="sample-caption">{content.gallerySection.caption}</p>
  </div></section>
  <section className="section mechanism"><div className="content content--1120 section-flow">
   <SectionTitle lead={content.mechanismSection.lead}>{content.mechanismSection.title}</SectionTitle>
-  <div className="mechanism-proof"><img src="/assets/receita-bovina.webp" alt="Ficha real com ingredientes, preparo, montagem e rendimento" loading="lazy" width="720" height="1080"/><div className="mechanism-grid">{content.mechanism.map(([h,t],i)=>{const Icon=mechanismIcons[i];return <article key={h}><span className="mechanism-icon"><Icon size={25} aria-hidden="true"/></span><h3><span className="step-number">{i+1}.</span> {h}</h3><p>{t}</p></article>;})}</div></div>
+  <div className="mechanism-proof"><img src="/assets/receita-bovina-v3.webp" alt="Página final da receita com ingredientes, medidas e base do lote" loading="lazy" width="720" height="1480"/><div className="mechanism-grid">{content.mechanism.map(([h,t],i)=>{const Icon=mechanismIcons[i];return <article key={h}><span className="mechanism-icon"><Icon size={25} aria-hidden="true"/></span><h3><span className="step-number">{i+1}.</span> {h}</h3><p>{t}</p></article>;})}</div></div>
   <p className="mechanism-close">{content.mechanismClose}</p><CTA/>
  </div></section>
  <section className="section mid-pitch"><div className="content content--1040 mid-pitch-grid">

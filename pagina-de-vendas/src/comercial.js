@@ -6,6 +6,6 @@ export const comercial = {
  valueStack: [
  ['Manual com 12 receitas e orientações de preparo', 'Incluído'],
  ['Fichas, listas de compra e checklist', 'Incluído'],
- ['Planilha de precificação, compras, combos e produção', 'Incluído']
+ ['Planilha de precificação com painel e simulação mensal', 'Incluído']
  ]
 };

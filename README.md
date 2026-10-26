@@ -29,3 +29,7 @@ PDFs integrais, planilhas pagas e pacotes de entrega não estão neste repositó
 ## Validação
 
 Build concluída; hero, CTAs, galeria, pausa, FAQ e checkout não configurado conferidos. Larguras 320, 375, 430, 768 e 1440 verificadas sem overflow horizontal. Limites e pendências em pagina-de-vendas/07-auditoria-design.md. Lighthouse e compra real não executados.
+
+## Atualização Premium V3
+
+Capa, galeria e composições usam capturas dos entregáveis finais. Manual principal: 45 páginas. A planilha permite alternar entre capturas de Painel e Início. O upsell mostra o guia final de 18 páginas e o painel de operação. Proveniência em pagina-de-vendas/08-previas-entregaveis-v3.json. Os valores nas capturas são demonstrativos.
