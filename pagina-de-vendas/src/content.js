@@ -42,7 +42,7 @@ export const content = {
   ],
   "gallerySection": {
     "title": "Veja o kit por dentro antes de comprar.",
-    "lead": "Capturas do PDF final que você recebe. Confira receitas, listas de compras e fichas de produção.",
+    "lead": "Receitas, fichas e listas do seu kit. Toque em uma amostra para ver a página inteira.",
     "caption": "Páginas da edição final de 45 páginas, com sumário clicável. Fotos culinárias ilustrativas. A planilha é um arquivo XLSX separado."
   },
   "gallery": [
@@ -63,7 +63,7 @@ export const content = {
       "Ficha de registro do lote piloto"
     ],
     [
-      "/assets/custos-v3.webp",
+      "/assets/custos-v4.webp",
       "Fundamentos do cálculo do preço"
     ],
     [

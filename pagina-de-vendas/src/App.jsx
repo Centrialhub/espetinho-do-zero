@@ -126,7 +126,7 @@ export default function App(){const checkout=checkoutUrl();return <>
   <p className="hero-sub">{content.hero.subtitle.map(([t,b],i)=>b?<strong key={i}>{t}</strong>:<span key={i}>{t}</span>)}</p>
   <CTA label="QUERO CONHECER O KIT" href="#previas"/>
   <ul className="hero-bullets">{content.hero.bullets.map(t=><li key={t}><Check size={20} aria-hidden="true"/><span>{t}</span></li>)}</ul>
-  <p className="hero-amplitude">{content.hero.amplitude}</p>
+  <p className="hero-amplitude">PDF ilustrado + planilha de precificação <span>•</span> R$37, pagamento único</p>
  </div></section>
  <section className="section pain"><div className="content content--880 section-flow">
   <SectionTitle>{content.pain.title} <span className="title-accent">{content.pain.emphasis}</span></SectionTitle>
@@ -135,7 +135,7 @@ export default function App(){const checkout=checkoutUrl();return <>
  </div></section>
  <section className="section section--tint gallery" id="previas"><div className="content content--1180 section-flow">
   <SectionTitle lead={content.gallerySection.lead}>{content.gallerySection.title}</SectionTitle>
-  <ScrollRail label="Páginas reais do kit" className="gallery-rail" auto interval={4200}>{content.gallery.map(([src,t])=><figure className="gallery-card" key={src}><img src={src} alt={t} loading="lazy" width="720" height="1480" draggable="false"/><figcaption>{t}</figcaption></figure>)}</ScrollRail>
+  <ScrollRail label="Páginas reais do kit" className="gallery-rail">{content.gallery.map(([src,t])=><figure className="gallery-card" key={src}><a className="gallery-page-link" href={src} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar: ${t}`}><img src={src} alt={t} loading="lazy" width="720" height="1480" draggable="false"/><span className="gallery-open">Ver página inteira ↗</span></a><figcaption>{t}</figcaption></figure>)}</ScrollRail>
   <p className="sample-caption">{content.gallerySection.caption}</p>
  </div></section>
  <section className="section mechanism"><div className="content content--1120 section-flow">
